@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dora Do - Ambient Watercolor (2022)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+    <header>
+        <div class="nav_wrapper">
+            <div>
+                <h1>Dora Do // <span class="grey">Creative Technologist</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <content>
+        <section id="ambient_watercolor">
+            <div class="column-wrapper">
+                <div class="column">
+                    <img src="/assets/images/watercolor_demo_1.gif" alt="Ambient Watercolor">
+                </div>
+                <div class="column">
+                    <h1><i>Ambient Watercolor (2022)</i></h1>
+                    <p><a href="https://ddo-nyu.github.io/watercolor/">Visit</a></p>
+                    <p><i>Ambient Watercolor</i> is an experiment with ML5 and generative art. In a calm, tranquil environment, participants can create abstract watercolor paintings using their hands.</p>
+                </div>
+            </div>
+            <h2>Background</h2>
+            <p class="smaller-font">The journey to the creation of my final project began at the beginning of the summer session. I already had previous coding experience, so my Creative Coding instructor, Carrie, told me to follow my own curriculum. She encouraged me to experiment with anything I have been previously curious about, so I told her I wanted to learn and experiment more with 3D web graphics (Three.js) and the idea of art installations. At the time, some ideas I had about my final project included visualizing music and placing in an art installation.</p>
+            <p class="smaller-font">During the first week of classes, I followed some ThreeJS tutorials which taught me the basics of creating objects, manipulating cameras, and shading. For the first creative coding assignment, “Opposites”, I created a 3D object with alternated turning into a sun or moon.</p>
+            <p class="smaller-font">While I was experimenting with Three.js in Creative Coding, I was also participating in group exercises in Interface Lab. For one of the exercises, we were tasked with analyzing an existing technological interface. My group chose something simple–the mouse and keyboard. The mouse and keyboard has been so heavily integrating into our society that we have overlooked all the issues that come with it. Mainly, how it can cause pain for a lot of people after long term use. This, along with playing with the OrbitControls camera in Three.js, I began to toy with the idea of being able to manipulate objects on the screen with just your hand gestures.</p>
+            <p class="smaller-font">To do so, I knew that the webcam would be the easiest and most assessable way to recognize and track hand gestures. Carrie had suggested I looked into ML5, a machine learning javascript library, to recognize hand gestures through my webcam. I eventually went down a rabbit hole, trying to train my own model to recognize the specific gestures I wanted since prebuilt models, like PoseNet, did not do exactly what I wanted. In the interest of time, I abandoned my attempt to train my own model and instead modified the design of my intended user interaction to fit with PoseNet/HandPose.</p>
+            <p class="smaller-font">After being able to import the HandPose library, I modified my original “Opposites” assignment to be a globe. The idea was to be able to rotate the globe horizontally and vertically by moving your hand to the right or left, and to control zoom with two hands (opened to zoom out, closed to zoom in).</p>
+        </section>
+    </content>
+</div>
+</body>
+</html>
